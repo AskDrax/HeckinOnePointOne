@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:HeckinOnePointOne.Resources">
+
+    <!-- Source Colors -->
+
+    <Color x:Key="SlateDark">#FF3F5663</Color>
+    <Color x:Key="SlateLight">#FF658DA4</Color>
+
+    <Color x:Key="VeryDarkGrey">#FF2B2B2B</Color>
+    <Color x:Key="DarkestDarkGrey">#FF252525</Color>
+
+    <Color x:Key="VeryLightGreen">#FFDCFFDC</Color>
+    <Color x:Key="HighlightGreen">#FFAEFFAE</Color>
+
+    <Color x:Key="AlmostWhite">#FFF1FFF1</Color>
+
+
+    <!-- Window Brushes -->
+
+    <SolidColorBrush x:Key="WindowBorderDarkBrush" Color="{StaticResource SlateDark}"/>
+    <SolidColorBrush x:Key="WindowBorderLightBrush" Color="{StaticResource SlateLight}"/>
+
+    <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource VeryDarkGrey}"/>
+    <SolidColorBrush x:Key="WindowBackgroundBorderBrush" Color="{StaticResource DarkestDarkGrey}"/>
+
+
+    <!-- Button Brushes -->
+
+    <SolidColorBrush x:Key="TitleButtonDarkBrush" Color="{StaticResource VeryDarkGrey}"/>
+    <SolidColorBrush x:Key="TitleButtonLightBrush" Color="{StaticResource SlateLight}"/>
+    <SolidColorBrush x:Key="TitleButtonBorderBrush" Color="{StaticResource DarkestDarkGrey}"/>
+
+    <SolidColorBrush x:Key="TitleButtonHoverDarkBrush" Color="{StaticResource VeryLightGreen}"/>
+    <SolidColorBrush x:Key="TitleButtonHoverLightBrush" Color="{StaticResource HighlightGreen}"/>
+    <SolidColorBrush x:Key="TitleButtonHoverBorderBrush" Color="{StaticResource HighlightGreen}"/>
+
+    <!-- Text Brushes -->
+
+    <SolidColorBrush x:Key="TitleTextBrush" Color="{StaticResource AlmostWhite}"/>
+
+    <!-- Image Brushes -->
+
+    <ImageBrush x:Key="TitleIconBrush" ImageSource="/Images/bar chart.png"/>
+    
+    
+</ResourceDictionary>

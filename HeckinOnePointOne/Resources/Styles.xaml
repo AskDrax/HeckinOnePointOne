@@ -1,0 +1,65 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:HeckinOnePointOne.Resources">
+
+    <Style x:Key="TitleButtonStyle" TargetType="{x:Type Button}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Name="Border" CornerRadius="0,0,0,0" BorderThickness="1.0" 
+                            Background="{StaticResource TitleButtonLightBrush}"
+                            BorderBrush="{StaticResource TitleButtonBorderBrush}"       
+                            >
+                        <ContentPresenter Margin="-1"                                 
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          RecognizesAccessKey="True"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+
+                        <!--Animate to "Hover" Colors on MouseEnter-->
+                        <EventTrigger RoutedEvent="Border.MouseEnter" SourceName="Border">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ParallelTimeline>
+                                        <ColorAnimation
+                                        Storyboard.TargetName="Border"
+                                        Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
+                                        To="{StaticResource HighlightGreen}"
+                                        Duration="0:0:0.1" />
+                                        <ColorAnimation
+                                        Storyboard.TargetName="Border"
+                                        Storyboard.TargetProperty="BorderBrush.(SolidColorBrush.Color)"
+                                        To="{StaticResource HighlightGreen}"
+                                        Duration="0:0:0.075" />
+                                    </ParallelTimeline>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+
+                        <!--Animate back to Normal Colors on MouseLeave-->
+                        <EventTrigger RoutedEvent="Border.MouseLeave" SourceName="Border">
+                            <BeginStoryboard>
+                                <Storyboard>
+                                    <ParallelTimeline>
+                                        <ColorAnimation
+                                        Storyboard.TargetName="Border"
+                                        Storyboard.TargetProperty="Background.(SolidColorBrush.Color)"
+                                        To="{StaticResource SlateLight}"
+                                        Duration="0:0:0.1" />
+                                        <ColorAnimation
+                                        Storyboard.TargetName="Border"
+                                        Storyboard.TargetProperty="BorderBrush.(SolidColorBrush.Color)"
+                                        To="{StaticResource DarkestDarkGrey}"
+                                        Duration="0:0:0.075" />
+                                    </ParallelTimeline>
+                                </Storyboard>
+                            </BeginStoryboard>
+                        </EventTrigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+</ResourceDictionary>
