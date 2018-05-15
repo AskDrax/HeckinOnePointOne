@@ -62,4 +62,22 @@
         </Setter>
     </Style>
 
+    <Style x:Key="InputBoxStyle" TargetType="{x:Type TextBox}">
+        <Setter Property="Foreground">
+            <Setter.Value>
+                <SolidColorBrush Color="{StaticResource LightBrightYellow}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Background">
+            <Setter.Value>
+                <SolidColorBrush Color="{StaticResource VeryDarkGrey}"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BorderBrush">
+            <Setter.Value>
+                <SolidColorBrush Color="{StaticResource AlmostBlack}"/>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
 </ResourceDictionary>

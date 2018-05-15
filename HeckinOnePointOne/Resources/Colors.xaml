@@ -9,11 +9,13 @@
 
     <Color x:Key="VeryDarkGrey">#FF2B2B2B</Color>
     <Color x:Key="DarkestDarkGrey">#FF252525</Color>
+    <Color x:Key="AlmostBlack">#FF151515</Color>
 
     <Color x:Key="VeryLightGreen">#FFDCFFDC</Color>
     <Color x:Key="HighlightGreen">#FFAEFFAE</Color>
 
     <Color x:Key="AlmostWhite">#FFF1FFF1</Color>
+    <Color x:Key="LightBrightYellow">#FFF8FFB0</Color>
 
 
     <!-- Window Brushes -->
@@ -23,6 +25,8 @@
 
     <SolidColorBrush x:Key="WindowBackgroundBrush" Color="{StaticResource VeryDarkGrey}"/>
     <SolidColorBrush x:Key="WindowBackgroundBorderBrush" Color="{StaticResource DarkestDarkGrey}"/>
+
+    <SolidColorBrush x:Key="ContentAreaBackgroundBrush" Color="{StaticResource AlmostBlack}"/>
 
 
     <!-- Button Brushes -->
@@ -38,6 +42,7 @@
     <!-- Text Brushes -->
 
     <SolidColorBrush x:Key="TitleTextBrush" Color="{StaticResource AlmostWhite}"/>
+    <SolidColorBrush x:Key="LabelTextBrush" Color="{StaticResource LightBrightYellow}"/>
 
     <!-- Image Brushes -->
 
