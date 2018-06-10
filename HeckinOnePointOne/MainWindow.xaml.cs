@@ -30,6 +30,18 @@ namespace HeckinOnePointOne
 
         public string TimerText;
 
+        private HorizontalAlignment powerAlignment;
+
+        public HorizontalAlignment PowerAlignment
+        {
+            get { return powerAlignment; }
+            set
+            {
+                powerAlignment = value;
+                NotifyStaticPropertyChanged("PowerAlignment");
+            }
+        }
+
         public PowerCollection ThePowerCollection
         {
             get { return thePowerCollection; }
@@ -83,6 +95,7 @@ namespace HeckinOnePointOne
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             PowersListBox.ItemsSource = ThePowerCollection;
+            //TextBlock tb = (TextBlock)PowersListBox.FindName("PowersListText");
         }
 
         private void CalculateButton_Click(object sender, RoutedEventArgs e)
@@ -117,6 +130,18 @@ namespace HeckinOnePointOne
             int decimalNumber;
 
             e.Handled = !int.TryParse(e.Text, NumberStyles.Integer, CultureInfo.CurrentCulture, out decimalNumber);
+        }
+
+        private void LButton_Click(object sender, RoutedEventArgs e)
+        {
+            //PowerAlignment = HorizontalAlignment.Left;
+            PowersListBox.HorizontalContentAlignment = HorizontalAlignment.Left;
+        }
+
+        private void RButton_Click(object sender, RoutedEventArgs e)
+        {
+            //PowerAlignment = HorizontalAlignment.Right;
+            PowersListBox.HorizontalContentAlignment = HorizontalAlignment.Right;
         }
     }
 }

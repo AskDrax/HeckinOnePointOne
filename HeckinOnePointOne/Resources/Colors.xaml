@@ -42,7 +42,7 @@
     <!-- Text Brushes -->
 
     <SolidColorBrush x:Key="TitleTextBrush" Color="{StaticResource AlmostWhite}"/>
-    <SolidColorBrush x:Key="LabelTextBrush" Color="{StaticResource LightBrightYellow}"/>
+    <SolidColorBrush x:Key="LabelTextBrush" Color="{DynamicResource HighlightGreen}"/>
 
     <!-- Image Brushes -->
 

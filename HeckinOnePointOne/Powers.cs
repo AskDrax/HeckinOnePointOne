@@ -44,6 +44,8 @@ namespace HeckinOnePointOne
         private String fractionValueString;
         private String valueString;
 
+        //private TextAlignment powerAlignment;
+
         private List<int> reverseValue = new List<int>();
 
         public int TotalDigitCount
@@ -90,11 +92,18 @@ namespace HeckinOnePointOne
         {
             get { return valueString; }
         }
- 
+
         public List<int> ReverseValue
         {
             get { return reverseValue; }
         }
+
+        /*
+        public TextAlignment PowerAlignment
+        {
+            get { return powerAlignment; }
+        }
+        */
 
         public Power()
         {
